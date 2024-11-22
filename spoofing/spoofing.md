@@ -32,3 +32,9 @@ This example demonstrates spoofind through two ways -- Stealing cookies programm
 1. Briefly explain the spoofing vulnerability in **insecure.ts**.
 2. Briefly explain different ways in which vulnerability can be exploited.
 3. Briefly explain why **secure.ts** does not have the spoofing vulnerability in **insecure.ts**.
+
+Answers:
+
+1. As the insecure server lacks strong session management or authentication, a hacker could intercept and spoof other traffic or manipulate cookie data to impersonate regular users. CSRF could trick a user into performing insecure actions on what they believed was the same website.
+2. Spoofing and CSRF could be used to steal data or mask malicious activites to prevent retaliation. Vulnerable users may not even know their data has been stolen.
+3. Using the httpOnly and Samesite flags in the session makes it much more difficult for a hacker to spoof a website. Session based authentication can also be used to identify irregular behavior in spoofed accounts. If a user is acting differently that usual, they may be identified as a hacker with a spoofed identity. 
