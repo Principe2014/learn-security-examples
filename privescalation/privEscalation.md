@@ -27,3 +27,9 @@ Answer the following:
 1. Briefly explain the potential vulnerabilities in **insecure.ts**
 2. Briefly explain how a malicious attacker can exploit them.
 3. Briefly explain the defensive techniques used in **secure.ts** to prevent the privilege escalation vulnerability?
+
+ANSWERs: 
+
+1. The insecure server is vulnerable to privilege escalation, which would allow a hacker to escalate their user account's role.
+2. This could allow a hacker to obtain privileges and abilities they would not otherwise have, which they could use to sabotage the server or steal info.
+3. The secure server uses session-based authentication, meaning a hacker who logs in as a basic user cannot upgrade their privileges within the same session.
