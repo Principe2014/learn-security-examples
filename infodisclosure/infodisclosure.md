@@ -33,3 +33,8 @@ Answer the following:
 1. Briefly explain the potential vulnerabilities in **insecure.ts**
 2. Briefly explain how a malicious attacker can exploit them.
 3. Briefly explain the defensive techniques used in **secure.ts** to prevent the information disclosure vulnerability?
+
+Answers: 
+1. Insecure.ts is vulnerable to insecure direct object reference attacks, where a server allows direct access to sensitive information without validation.
+2. A hacker could attempt to guess an object id, especially if the pattern for naming these ids is sequential, allowing themm to directly access secure information.
+3. Secure.ts includes input validation and checks for correct authorization before allowing access to protected data.
