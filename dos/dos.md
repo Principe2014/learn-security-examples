@@ -33,3 +33,9 @@ Answer the following:
 1. Briefly explain the potential vulnerabilities in **insecure.ts** that can lead to a DoS attack.
 2. Briefly explain how a malicious attacker can exploit them.
 3. Briefly explain the defensive techniques used in **secure.ts** to prevent the DoS vulnerability?
+
+ANSWERS:
+
+1. Insecure.ts does not implement a rate-limiting mechanism to limit the number of requests. 
+2. A malicious attacker could flood the server with requests, rendering it unresponsive.
+3. Secure.ts uses the rate-limit middleware to limit the number of requests sent from a certain IP address within a time frame(5 seconds) An attacker using one IP to spam requests would be unable to flood the server, although the rate-limiter might not prevent an attacker who uses thousands of devices/IP addresses to flood the system iwth requests.
